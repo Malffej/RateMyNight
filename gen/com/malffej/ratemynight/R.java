@@ -52,8 +52,12 @@ public final class R {
         public static final int hint_password=0x7f050006;
         public static final int hint_username=0x7f050004;
         public static final int login_activity_button_login=0x7f050007;
+        public static final int login_activity_error_message=0x7f05000b;
+        public static final int login_activity_error_title=0x7f05000a;
         public static final int login_activity_text_view_signup=0x7f050008;
         public static final int signup_activity_button_signup=0x7f050009;
+        public static final int signup_activity_error_message=0x7f05000d;
+        public static final int signup_activity_error_title=0x7f05000c;
         public static final int title_activity_login=0x7f050003;
         public static final int title_activity_signup=0x7f050002;
     }

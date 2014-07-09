@@ -11,5 +11,9 @@
     <string name="login_activity_button_login">Login</string>
     <string name="login_activity_text_view_signup">Click here to sign up!</string>
     <string name="signup_activity_button_signup">Sign Up</string>
+    <string name="login_activity_error_title">Oops!</string>
+    <string name="login_activity_error_message">Incorrect username and/or password. Please try again!</string>
+    <string name="signup_activity_error_title">Oops!</string>
+    <string name="signup_activity_error_message">Incorrect username, password, and/or email. Please try again!</string>
 
 </resources>

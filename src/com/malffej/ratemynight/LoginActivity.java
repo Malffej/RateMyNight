@@ -1,6 +1,7 @@
 package com.malffej.ratemynight;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -40,6 +41,29 @@ public class LoginActivity extends Activity {
 		});
 		
 		// Takes user to MainActivity if a login is successful, and if not then prompts for an error message
+		mLoginButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				
+				// Get the String values for both mUsername & mPassword, trim any white spaces, and store them in variables
+				String username = mUsername.getText().toString().trim();
+				String password = mPassword.getText().toString().trim();
+				
+				// Test mUsername & mPassword fields for input, if empty then prompt user an AlertDialog with an error message
+				if (username.isEmpty() || password.isEmpty()){
+					AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+					builder.setTitle(R.string.login_activity_error_title);
+					builder.setMessage(R.string.login_activity_error_message);
+					builder.setPositiveButton(android.R.string.ok, null);
+					AlertDialog dialog = builder.create();
+					dialog.show();
+				}
+				else{
+					
+				}
+			}
+		});
 	}
 
 	@Override
