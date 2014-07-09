@@ -11,6 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.parse.LogInCallback;
+import com.parse.ParseException;
+import com.parse.ParseUser;
+
 public class LoginActivity extends Activity {
 	
 	// Declaring member variables
@@ -61,6 +65,14 @@ public class LoginActivity extends Activity {
 				}
 				else{
 					
+					// Attempt to Login
+					ParseUser.logInInBackground(username, password, new LogInCallback() {
+						
+						@Override
+						public void done(ParseUser arg0, ParseException arg1) {
+							
+						}
+					});
 				}
 			}
 		});
